@@ -1,9 +1,9 @@
-import {render} from "react-dom";
-import './style.scss';
+import {createRoot} from "react-dom/client";
 
-import App from "./App";
+import { App } from "./app";
 
-render(
-    <App/>,
-    document.getElementById('root')
-)
+const root = createRoot(document.getElementById("root"));
+
+root.render(
+    <App />
+);
