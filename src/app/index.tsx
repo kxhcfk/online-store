@@ -1,13 +1,17 @@
 import "./styles/index.scss";
-import {MainPage} from "../pages/MainPage";
-import {Suspense} from "react";
+import {RouterProvider} from "@/app/providers/RouterProvider/ui";
+
+import styles from './styles.module.scss'
+import {Header} from "@/widgets/Header";
 
 const App = () => {
     return (
-        <Suspense fallback="Loading...">
-            <MainPage/>
-        </Suspense>
-    )
-}
+        <div className={styles.root}>
+            <Header/>
+            
+            <RouterProvider/>
+        </div>
+    );
+};
 
 export {App};

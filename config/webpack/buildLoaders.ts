@@ -19,8 +19,8 @@ const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
                 loader: "css-loader",
                 options: {
                     modules: {
-                        auto: /\.module\./ig,
-                        localIdentName: isDev ? "[path][name]__[local]--[hash:base64:5]" : "[hash:base64:5]",
+                        auto: (path: string) => path.includes('.module.'),
+                        localIdentName: isDev ? "[path][name]__[local]" : "[hash:base64:5]",
                     },
                 }
             },

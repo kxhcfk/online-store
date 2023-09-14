@@ -1,0 +1,7 @@
+.root {
+    --gap: var(--space-l);
+    
+    padding-inline: var(--gap);
+    margin-inline: auto;
+    max-width: calc(1780px + var(--gap) * 2);
+}
