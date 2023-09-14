@@ -1,8 +1,12 @@
 import "./styles/index.scss";
+import {MainPage} from "../pages/MainPage";
+import {Suspense} from "react";
 
 const App = () => {
     return (
-        <h1>test3</h1>
+        <Suspense fallback="Loading...">
+            <MainPage/>
+        </Suspense>
     )
 }
 
