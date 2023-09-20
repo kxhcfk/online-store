@@ -2,15 +2,16 @@ import {HTMLAttributes} from "react";
 
 import { classNames } from "@/shares/lib/classNames";
 
-interface MainPageProps extends HTMLAttributes<HTMLDivElement> {}
 
-const MainPage = (props: MainPageProps) => {
+interface CatalogPageProps extends HTMLAttributes<HTMLDivElement> {}
+
+const CatalogPage = (props: CatalogPageProps) => {
     const { className, ...otherProps } = props;
     return (
         <div className={classNames(className)} {...otherProps}>
-            Main Page
+            Catalog Page
         </div>
     );
 };
 
-export default MainPage;
+export default CatalogPage;

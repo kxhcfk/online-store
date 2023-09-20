@@ -1,5 +1,9 @@
-[data-theme="dark"]:root {
+.app.dark  {
     --color-text: #ffffff;
+    --color-inverted-text: #000000;
     
     --color-bg-layout: #000000;
+    --color-inverted-bg-layout: #ffffff;
+    
+    --gradient-main: linear-gradient(to right,#cb11ab 0,#481173 100%) no-repeat;
 }
