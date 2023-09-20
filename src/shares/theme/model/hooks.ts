@@ -12,7 +12,7 @@ export const useTheme = () => {
             
             return newTheme
         });
-    }, [])
+    }, [theme])
     
     return {
         theme,

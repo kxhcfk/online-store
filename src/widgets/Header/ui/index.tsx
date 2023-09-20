@@ -1,6 +1,7 @@
 import styles from './styles.module.scss';
 import {Container} from "@/shares/ui/Container";
 import {NavigationBar} from "@/entities/NavigationBar";
+import {ThemeSwitcher} from "@/widgets/ThemeSwitcher/ui";
 
 const Header = () => {
     return (
@@ -8,6 +9,7 @@ const Header = () => {
             <Container>
                 <div className={styles.wrapper}>
                     <NavigationBar/>
+                    <ThemeSwitcher/>
                 </div>
             </Container>
         </header>

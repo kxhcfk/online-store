@@ -1,5 +1,5 @@
 import {createContext, Dispatch, SetStateAction} from "react";
-import {Theme} from "@/app/types/theme";
+import {Theme} from "@/shares/types/theme";
 
 export interface ThemeContextProps {
     theme?: Theme;

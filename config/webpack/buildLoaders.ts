@@ -5,6 +5,11 @@ import webpack from "webpack";
 const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
     const {isDev} = options;
     
+    const svgLoader = {
+        test: /\.svg$/,
+        use: ["@svgr/webpack"],
+    };
+    
     const typescriptLoader = {
         test: /\.tsx?$/,
         use: "ts-loader",
@@ -19,10 +24,10 @@ const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
                 loader: "css-loader",
                 options: {
                     modules: {
-                        auto: (path: string) => path.includes('.module.'),
+                        auto: (path: string) => path.includes(".module."),
                         localIdentName: isDev ? "[path][name]__[local]" : "[hash:base64:5]",
                     },
-                }
+                },
             },
             "sass-loader",
         ],
@@ -31,6 +36,7 @@ const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
     return [
         typescriptLoader,
         styleLoader,
+        svgLoader
     ];
 };
 
