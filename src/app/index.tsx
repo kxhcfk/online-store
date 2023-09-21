@@ -13,7 +13,9 @@ const App = () => {
         <div className={classNames("app", theme)}>
             <Header/>
             
-            <RouterProvider/>
+            <main>
+                <RouterProvider/>
+            </main>
         </div>
     );
 };

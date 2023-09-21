@@ -1,7 +1,5 @@
 import {Route, Routes} from "react-router-dom";
-import {MainPage} from "@/pages/MainPage";
 import {Suspense} from "react";
-import {CatalogPage} from "@/pages/CatalogPage";
 import {routeConfig} from "@/shares/config/router/routeConfig";
 
 const RouterProvider = () => {
