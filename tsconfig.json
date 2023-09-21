@@ -10,8 +10,8 @@
     "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@/icons/*": ["./src/shares/assets/icons/*"],
+      "@/*": ["src/*"],
+      "@/icons/*": ["src/shares/assets/icons/*"],
     }
   },
   "ts-node": {
