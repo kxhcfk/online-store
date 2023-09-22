@@ -27,4 +27,4 @@ export default (env: BuildEnv) => {
     });
     
     return config;
-}
+};

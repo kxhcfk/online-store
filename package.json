@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "webpack serve --env mode=development",
     "build:dev": "webpack --env mode=development",
-    "build": "webpack --env mode=production"
+    "build": "webpack --env mode=production",
+    "lint:ts": "eslint \"./**/*.{ts,tsx}\"",
+    "lint:ts:fix": "eslint \"./**/*.{ts,tsx}\" --fix"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +19,11 @@
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@types/webpack": "^5.28.2",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
     "css-loader": "^6.8.1",
+    "eslint": "^8.49.0",
+    "eslint-plugin-react": "^7.33.2",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
     "react-refresh": "^0.14.0",
