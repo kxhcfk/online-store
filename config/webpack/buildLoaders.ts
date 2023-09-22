@@ -5,18 +5,27 @@ import webpack from "webpack";
 const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
     const {isDev} = options;
     
-    const svgLoader = {
+    const fileLodaer: webpack.RuleSetRule = {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+            {
+                loader: "file-loader",
+            },
+        ],
+    }
+    
+    const svgLoader: webpack.RuleSetRule = {
         test: /\.svg$/,
         use: ["@svgr/webpack"],
     };
     
-    const typescriptLoader = {
+    const typescriptLoader: webpack.RuleSetRule = {
         test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
     };
     
-    const styleLoader = {
+    const styleLoader: webpack.RuleSetRule = {
         test: /\.s[ac]ss$/i,
         use: [
             isDev ? "style-loader" : MiniCssExtractPlugin.loader,
