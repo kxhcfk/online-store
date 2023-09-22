@@ -1,4 +1,4 @@
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 import {Container} from "@/shares/ui/Container";
 import {NavigationBar} from "@/entities/NavigationBar";
 import {LangSwitcher} from "@/features/LangSwitcher";
@@ -9,9 +9,9 @@ const Header = () => {
         <header className={styles.root}>
             <Container>
                 <div className={styles.wrapper}>
-                    <NavigationBar/>
-                    <ThemeSwitcher/>
-                    <LangSwitcher/>
+                    <NavigationBar />
+                    <ThemeSwitcher />
+                    <LangSwitcher />
                 </div>
             </Container>
         </header>

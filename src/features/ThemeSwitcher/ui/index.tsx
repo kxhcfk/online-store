@@ -24,11 +24,15 @@ const ThemeSwitcher = (props: ThemeSwitcherProps) => {
     }, [theme]);
     
     return (
-        <Button className={classNames(styles.root, className)} onClick={handleClick} {...otherProps}>
+        <Button
+            className={classNames(styles.root, className)}
+            onClick={handleClick}
+            {...otherProps}
+        >
             {theme === "light" ? (
-                <LightIcon className={styles.icon}/>
+                <LightIcon className={styles.icon} />
             ) : (
-                <DarkIcon className={styles.icon}/>
+                <DarkIcon className={styles.icon} />
             )}
         </Button>
     );

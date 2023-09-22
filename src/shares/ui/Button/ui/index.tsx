@@ -18,8 +18,11 @@ const Button = memo((props: ButtonProps) => {
     } = props;
     
     return (
-        <button className={classNames(styles.root, className, theme)} {...otherProps}>
-        
+        <button
+            className={classNames(styles.root, className, theme)}
+            {...otherProps}
+        >
+            123
         </button>
     );
 });

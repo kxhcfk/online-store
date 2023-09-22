@@ -8,12 +8,28 @@ import {classNames} from "@/shares/lib/classNames";
 const App = () => {
     const {theme} = useTheme();
     
+    const t = 0;
+    
     return (
         <div className={classNames("app", theme)}>
-            <Header/>
+            <Header />
+            
+            <div
+                style={{
+                    marginTop: 3,
+                    display: "block",
+                }}
+            >
+            </div>
+            
+            {t ? (
+                <div>
+                    123
+                </div>
+            ) : null}
             
             <main>
-                <RouterProvider/>
+                <RouterProvider />
             </main>
         </div>
     );

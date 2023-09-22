@@ -18,14 +18,14 @@ export const RoutePaths: Record<AppRoutes, string> = {
 export const routeConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.MAIN]: {
         path: RoutePaths.main,
-        element: <MainPage/>,
+        element: <MainPage />,
     },
     [AppRoutes.CATALOG]: {
         path: RoutePaths.catalog,
-        element: <CatalogPage/>,
+        element: <CatalogPage />,
     },
     [AppRoutes.NOT_FOUND]: {
         path: RoutePaths.not_found,
-        element: <NotFoundPage/>
+        element: <NotFoundPage />
     }
 };

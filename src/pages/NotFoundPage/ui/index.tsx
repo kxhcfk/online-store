@@ -11,6 +11,7 @@ const NotFoundPage = () => {
         <div className={styles.root}>
             <Container>
                 <h1>{t("Заголовок")}</h1>
+
                 <Link to={RoutePaths.main}>
                     {t("Кнопка на главную")}
                 </Link>

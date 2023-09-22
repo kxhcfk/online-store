@@ -5,14 +5,14 @@ import webpack from "webpack";
 const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
     const {isDev} = options;
     
-    const fileLodaer: webpack.RuleSetRule = {
+    const fileLoader: webpack.RuleSetRule = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
             {
                 loader: "file-loader",
             },
         ],
-    }
+    };
     
     const svgLoader: webpack.RuleSetRule = {
         test: /\.svg$/,
@@ -45,7 +45,8 @@ const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
     return [
         typescriptLoader,
         styleLoader,
-        svgLoader
+        svgLoader,
+        fileLoader
     ];
 };
 

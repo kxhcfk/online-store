@@ -14,7 +14,7 @@ const ThemeProvider = (props: ThemeProviderProps) => {
     const defaultValue = useMemo(() => ({
         theme,
         setTheme
-    }), [theme])
+    }), [theme]);
     
     return (
         <ThemeContext.Provider value={defaultValue}>

@@ -6,16 +6,16 @@ export const useTheme = () => {
     
     const toggleTheme = useCallback(() => {
         setTheme(prevState => {
-            const newTheme = prevState === 'light' ? 'dark' : 'light';
+            const newTheme = prevState === "light" ? "dark" : "light";
             
             localStorage.setItem(LOCALE_STORAGE_THEME_KEY, newTheme);
             
-            return newTheme
+            return newTheme;
         });
-    }, [theme])
+    }, [theme]);
     
     return {
         theme,
         toggleTheme,
-    }
-}
+    };
+};

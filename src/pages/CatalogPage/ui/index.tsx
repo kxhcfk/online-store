@@ -2,11 +2,11 @@ import {useTranslation} from "react-i18next";
 
 const CatalogPage = () => {
     
-    const {t} = useTranslation('catalog');
+    const {t} = useTranslation("catalog");
     
     return (
         <div>
-            {t('тест')}
+            {t("тест")}
         </div>
     );
 };
