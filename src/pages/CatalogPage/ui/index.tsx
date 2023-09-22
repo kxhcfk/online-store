@@ -1,15 +1,12 @@
-import {HTMLAttributes} from "react";
+import {useTranslation} from "react-i18next";
 
-import { classNames } from "@/shares/lib/classNames";
-
-
-interface CatalogPageProps extends HTMLAttributes<HTMLDivElement> {}
-
-const CatalogPage = (props: CatalogPageProps) => {
-    const { className, ...otherProps } = props;
+const CatalogPage = () => {
+    
+    const {t} = useTranslation('catalog');
+    
     return (
-        <div className={classNames(className)} {...otherProps}>
-            Catalog Page
+        <div>
+            {t('тест')}
         </div>
     );
 };

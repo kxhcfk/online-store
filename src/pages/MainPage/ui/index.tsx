@@ -1,14 +1,11 @@
-import {HTMLAttributes} from "react";
+import {useTranslation} from "react-i18next";
 
-import { classNames } from "@/shares/lib/classNames";
-
-interface MainPageProps extends HTMLAttributes<HTMLDivElement> {}
-
-const MainPage = (props: MainPageProps) => {
-    const { className, ...otherProps } = props;
+const MainPage = () => {
+    const {t} = useTranslation('main');
+    
     return (
-        <div className={classNames(className)} {...otherProps}>
-            Main Page
+        <div>
+            {t('тест')}
         </div>
     );
 };

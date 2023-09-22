@@ -7,8 +7,10 @@ import {useTheme} from "@/shares/theme";
 
 import DarkIcon from "@/icons/darkMode.svg";
 import LightIcon from "@/icons/lightMode.svg";
+import {Button, ButtonTheme} from "@/shares/ui/Button";
 
 interface ThemeSwitcherProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+    theme?: ButtonTheme;
 }
 
 const ThemeSwitcher = (props: ThemeSwitcherProps) => {
@@ -22,13 +24,13 @@ const ThemeSwitcher = (props: ThemeSwitcherProps) => {
     }, [theme]);
     
     return (
-        <button className={classNames(styles.root, className)} onClick={handleClick} {...otherProps}>
+        <Button className={classNames(styles.root, className)} onClick={handleClick} {...otherProps}>
             {theme === "light" ? (
                 <LightIcon className={styles.icon}/>
             ) : (
                 <DarkIcon className={styles.icon}/>
             )}
-        </button>
+        </Button>
     );
 };
 

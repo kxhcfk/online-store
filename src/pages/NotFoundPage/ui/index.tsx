@@ -1,21 +1,18 @@
 import styles from "./styles.module.scss";
 import {Link} from "react-router-dom";
 import {RoutePaths} from "@/shares/config/router/routeConfig";
-import {HTMLAttributes} from "react";
-import {classNames} from "@/shares/lib/classNames";
 import {Container} from "@/shares/ui/Container";
+import {useTranslation} from "react-i18next";
 
-interface NotFoundPageProps extends HTMLAttributes<HTMLDivElement> {
-}
-
-const NotFoundPage = (props: NotFoundPageProps) => {
-    const {className, ...otherProps} = props;
+const NotFoundPage = () => {
+    const {t} = useTranslation("not_found");
+    
     return (
-        <div className={classNames(styles.root, className)} {...otherProps}>
+        <div className={styles.root}>
             <Container>
-                <h1>Страница не найдена</h1>
+                <h1>{t("Заголовок")}</h1>
                 <Link to={RoutePaths.main}>
-                    На главную
+                    {t("Кнопка на главную")}
                 </Link>
             </Container>
         </div>
