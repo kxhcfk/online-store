@@ -7,7 +7,7 @@ import styles from "./styles.module.scss";
 type ButtonTheme = "clear";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    theme?: ButtonTheme;
+    readonly theme?: ButtonTheme;
 }
 
 const Button = memo((props: ButtonProps) => {

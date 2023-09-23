@@ -19,12 +19,11 @@ const App = () => {
                     marginTop: 3,
                     display: "block",
                 }}
-            >
-            </div>
+            />
             
             {t ? (
                 <div>
-                    123
+                    123 &rbrace;
                 </div>
             ) : null}
             

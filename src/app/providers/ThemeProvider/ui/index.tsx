@@ -3,7 +3,7 @@ import {Theme} from "@/shares/types/theme";
 import {LOCALE_STORAGE_THEME_KEY, ThemeContext} from "@/shares/theme";
 
 interface ThemeProviderProps  {
-    children: ReactNode;
+    readonly children: ReactNode;
 }
 
 const ThemeProvider = (props: ThemeProviderProps) => {

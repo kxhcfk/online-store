@@ -10,7 +10,7 @@ import LightIcon from "@/icons/lightMode.svg";
 import {Button, ButtonTheme} from "@/shares/ui/Button";
 
 interface ThemeSwitcherProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    theme?: ButtonTheme;
+    readonly theme?: ButtonTheme;
 }
 
 const ThemeSwitcher = (props: ThemeSwitcherProps) => {

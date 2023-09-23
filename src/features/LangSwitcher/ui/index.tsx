@@ -9,7 +9,7 @@ import {useTranslation} from "react-i18next";
 import LanguageIcon from "@/icons/language.svg";
 
 interface LangSwitcherProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    theme?: ButtonTheme;
+    readonly theme?: ButtonTheme;
 }
 
 const LangSwitcher = (props: LangSwitcherProps) => {

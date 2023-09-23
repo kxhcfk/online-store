@@ -1,8 +1,8 @@
-import styles from "./styles.module.scss";
 import {Container} from "@/shares/ui/Container";
 import {NavigationBar} from "@/entities/NavigationBar";
 import {LangSwitcher} from "@/features/LangSwitcher";
 import {ThemeSwitcher} from "@/features/ThemeSwitcher";
+import styles from "./styles.module.scss";
 
 const Header = () => {
     return (

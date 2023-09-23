@@ -5,8 +5,7 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended"
+    "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -21,6 +20,12 @@
     "react": {
       "version": "detect"
     },
+    "propWrapperFunctions": [
+      {
+        "property": "exact",
+        "exact": true
+      }
+    ],
     "linkComponents": [
       {
         "name": "Link",
@@ -45,7 +50,6 @@
       "error",
       "always"
     ],
-    "react/react-in-jsx-scope": "off",
     "react/display-name": "off",
     "react/hook-use-state": [
       "error",
@@ -249,6 +253,102 @@
         "afterOpening": "never",
         "beforeClosing": "proportional-always"
       }
-    ]
+    ],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        "declaration": "parens-new-line",
+        "assignment": "parens-new-line",
+        "return": "parens-new-line",
+        "arrow": "parens-new-line",
+        "condition": "parens-new-line",
+        "logical": "parens-new-line",
+        "prop": "parens-new-line"
+      }
+    ],
+    "react/no-access-state-in-setstate": "error",
+    "react/no-adjacent-inline-elements": "error",
+    "react/no-array-index-key": "error",
+    "react/no-arrow-function-lifecycle": "error",
+    "react/no-children-prop": [
+      "error",
+      {
+        "allowFunctions": false
+      }
+    ],
+    "react/no-danger": "error",
+    "react/no-danger-with-children": "error",
+    "react/no-deprecated": "error",
+    "react/no-did-mount-set-state": "error",
+    "react/no-did-update-set-state": "error",
+    "react/no-direct-mutation-state": "error",
+    "react/no-find-dom-node": "error",
+    "react/no-invalid-html-attribute": "error",
+    "react/no-is-mounted": "error",
+    "react/no-multi-comp": [
+      "error",
+      {
+        "ignoreStateless": false
+      }
+    ],
+    "react/no-namespace": "error",
+    "react/no-object-type-as-default-prop": "error",
+    "react/no-redundant-should-component-update": "error",
+    "react/no-render-return-value": "error",
+    "react/no-set-state": "error",
+    "react/no-string-refs": [
+      "error",
+      {
+        "noTemplateLiterals": true
+      }
+    ],
+    "react/no-this-in-sfc": "error",
+    "react/no-typos": "error",
+    "react/no-unescaped-entities": "error",
+    "react/no-unknown-property": "error",
+    "react/no-unsafe": "error",
+    "react/no-unstable-nested-components": "error",
+    "react/no-unused-class-component-methods": "error",
+    "react/no-unused-prop-types": "error",
+    "react/no-unused-state": "error",
+    "react/no-will-update-set-state": "error",
+    "react/prefer-es6-class": [
+      "error",
+      "never"
+    ],
+    "react/prefer-exact-props": "error",
+    "react/prefer-read-only-props": "error",
+    "react/prefer-stateless-function": [
+      "error",
+      {
+        "ignorePureComponents": false
+      }
+    ],
+    "react/prop-types": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "react/require-optimization": "error",
+    "react/require-render-return": "error",
+    "react/self-closing-comp": ["error", {
+      "component": true,
+      "html": true
+    }],
+    "react/sort-comp": "error",
+    "react/sort-default-props": ["error", {
+      "ignoreCase": true
+    }],
+    "react/sort-prop-types": ["error", {
+      "callbacksLast": true,
+      "ignoreCase": true,
+      "requiredFirst": true,
+      "sortShapeProp": true,
+      "noSortAlphabetically": true
+    }],
+    "react/state-in-constructor": ["error", "always"],
+    "react/static-property-placement": ["error", "static getter"],
+    "react/style-prop-object": "error",
+    "react/void-dom-elements-no-children": "error"
   }
 }
