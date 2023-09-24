@@ -1,9 +1,7 @@
 .app.dark  {
-    --color-text: #ffffff;
-    --color-inverted-text: #000000;
-    
-    --color-bg-layout: #000000;
-    --color-inverted-bg-layout: #ffffff;
-    
+    --color-text: #fff;
+    --color-inverted-text: #000;
+    --color-bg-layout: #000;
+    --color-inverted-bg-layout: #fff;
     --gradient-main: linear-gradient(to right,#cb11ab 0,#481173 100%) no-repeat;
 }
