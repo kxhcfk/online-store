@@ -8,6 +8,7 @@ const buildPlugins = (options: BuildOptions): webpack.WebpackPluginInstance[] =>
     const {isDev} = options;
     
     const plugins: webpack.WebpackPluginInstance[] = [
+        new webpack.ProgressPlugin(),
         new HtmlWebpackPlugin({
             template: options.paths.html,
         }),

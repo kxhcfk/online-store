@@ -1,6 +1,6 @@
 import {Route, Routes} from "react-router-dom";
 import {Suspense} from "react";
-import {routeConfig} from "@/shares/config/router/routeConfig";
+import {routeConfig } from "@/shares/config/router/routeConfig";
 
 const RouterProvider = () => {
     return (
