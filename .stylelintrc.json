@@ -51,6 +51,66 @@
     "selector-pseudo-class-no-unknown": true,
     "selector-pseudo-element-no-unknown": true,
     "selector-type-no-unknown": true,
-    "unit-no-unknown": true
+    "unit-no-unknown": true,
+    "at-rule-no-vendor-prefix": true,
+    "color-named": "never",
+    "declaration-no-important": true,
+    "function-url-no-scheme-relative": true,
+    "length-zero-no-unit": true,
+    "media-feature-name-no-vendor-prefix": true,
+    "property-no-vendor-prefix": true,
+    "selector-no-qualifying-type": true,
+    "selector-no-vendor-prefix": true,
+    "value-no-vendor-prefix": true,
+    "function-name-case": "lower",
+    "selector-type-case": "lower",
+    "value-keyword-case": "lower",
+    "at-rule-empty-line-before": "always",
+    "comment-empty-line-before": "always",
+    "custom-property-empty-line-before": "always",
+    "declaration-empty-line-before": [
+      "never",
+      {
+        "except": [
+          "after-comment"
+        ]
+      }
+    ],
+    "rule-empty-line-before": "always",
+    "declaration-block-single-line-max-declarations": 1,
+    "max-nesting-depth": [
+      2,
+      {
+        "ignore": [
+          "blockless-at-rules",
+          "pseudo-classes"
+        ]
+      }
+    ],
+    "number-max-precision": 1,
+    "selector-max-attribute": 3,
+    "selector-max-class": 3,
+    "selector-max-combinators": 2,
+    "selector-max-compound-selectors": 2,
+    "selector-max-id": 2,
+    "selector-max-pseudo-class": 2,
+    "selector-max-type": 2,
+    "selector-max-universal": 1,
+    "alpha-value-notation": "number",
+    "color-function-notation": "legacy",
+    "color-hex-length": "long",
+    "font-weight-notation": "named-where-possible",
+    "hue-degree-notation": "angle",
+    "import-notation": "string",
+    "keyframe-selector-notation": "percentage",
+    "media-feature-range-notation": "prefix",
+    "selector-not-notation": "simple",
+    "selector-pseudo-element-colon-notation": "double",
+    "font-family-name-quotes": "always-unless-keyword",
+    "function-url-quotes": "always",
+    "selector-attribute-quotes": "always",
+    "declaration-block-no-redundant-longhand-properties": true,
+    "shorthand-property-no-redundant-values": true,
+    "comment-whitespace-inside": "always"
   }
 }
