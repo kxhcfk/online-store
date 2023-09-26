@@ -19,7 +19,7 @@
     "no-duplicate-selectors": [
       true,
       {
-        "disallowInList": true
+        "disallowInList": false
       }
     ],
     "block-no-empty": true,
@@ -46,7 +46,7 @@
     "media-feature-name-no-unknown": true,
     "media-feature-name-value-no-unknown": true,
     "no-unknown-animations": true,
-    "no-unknown-custom-properties": true,
+    "no-unknown-custom-properties": false,
     "property-no-unknown": true,
     "selector-pseudo-class-no-unknown": true,
     "selector-pseudo-element-no-unknown": true,
@@ -67,12 +67,23 @@
     "value-keyword-case": "lower",
     "at-rule-empty-line-before": "always",
     "comment-empty-line-before": "always",
-    "custom-property-empty-line-before": "always",
-    "declaration-empty-line-before": [
-      "never",
+    "custom-property-empty-line-before": [
+      "always",
       {
         "except": [
-          "after-comment"
+          "after-comment",
+          "after-custom-property",
+          "first-nested"
+        ]
+      }
+    ],
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "after-comment",
+          "after-declaration",
+          "first-nested"
         ]
       }
     ],
@@ -87,7 +98,7 @@
         ]
       }
     ],
-    "number-max-precision": 1,
+    "number-max-precision": 2,
     "selector-max-attribute": 3,
     "selector-max-class": 3,
     "selector-max-combinators": 2,

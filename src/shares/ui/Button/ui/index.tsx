@@ -14,6 +14,7 @@ const Button = memo((props: ButtonProps) => {
     const {
         className,
         theme = "clear",
+        children,
         ...otherProps
     } = props;
     
@@ -22,7 +23,7 @@ const Button = memo((props: ButtonProps) => {
             className={classNames(styles.root, className, theme)}
             {...otherProps}
         >
-            123
+            {children}
         </button>
     );
 });
